@@ -1,0 +1,53 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings in case
+# people don't have core.autocrlf set.
+###############################################################################
+*               text eol=lf
+
+###############################################################################
+# These files are text and should be normalized (Convert crlf => lf)
+###############################################################################
+
+.gitattributes  text eol=lf
+.gitignore      text eol=lf
+
+# Text documents
+*.md            text eol=lf
+*.adoc          text eol=lf
+*.textile       text eol=lf
+*.mustache      text eol=lf
+*.csv           text eol=lf
+*.tab           text eol=lf
+*.tsv           text eol=lf
+*.sql           text eol=lf
+
+# Windows specific files
+*.bat           text eol=crlf
+*.ini           text eol=crlf
+
+###############################################################################
+# These files are binary and should be left untouched
+#
+# (binary is a macro for -text -diff)
+###############################################################################
+# Programs
+*.class         binary
+*.dll           binary
+*.ear           binary
+*.jar           binary
+*.so            binary
+*.war           binary
+
+# Graphics
+*.gif           binary
+*.ico           binary
+*.jpeg          binary
+*.jpg           binary
+*.png           binary
+*.tif           binary
+*.tiff          binary
+*.eps           binary
+
+# candidate to convert, as svg is xml
+*.svg           binary
+
