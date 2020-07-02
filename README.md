@@ -1,0 +1,1 @@
+Docker-DEmo f. einen SSH-Daemon. Serviceport ist 2222.
